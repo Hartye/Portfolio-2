@@ -1,0 +1,78 @@
+/* Animation */
+@keyframes first-animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes second-animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 10rem;
+  height: 40rem;
+  transition: all .2s ease-in-out;
+}
+
+.animation div:first-child {
+  animation-name: first-animation;
+  animation-duration: 1s;
+}
+
+.animation div:last-child {
+  animation-name: second-animation;
+  animation-duration: 1s;
+}
+
+.animation div {
+  height: 100px;
+  width: 40px;
+  background: var(--purple-bright);
+  margin: .5rem;
+  animation-iteration-count: infinite;
+}
+
+.animation:hover div {
+  animation-iteration-count: 0;
+}
+
+/* Bear */
+.greetings-bear {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 5rem 0 0 5rem;
+}
+
+.greetings-bear img {
+  opacity: .7;
+  transition: all .2s ease-in-out;
+}
+
+.greetings-bear img:hover {
+  transform: scale(1.1);
+  transform: rotate(5deg)
+}

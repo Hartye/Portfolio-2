@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/reveal.css" />
+    <link rel="stylesheet" href="./style/animation.css" />
+    <title>Hartye</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <li class="nav-item">
+            <a href="https://github.com/Hartye" target="_blank">Github</a>
+          </li>
+          <img src="./images/bxl-github.svg" alt="Github" class="link-img" />
+        </div>
+        <div class="nav-content">
+          <li class="nav-item">
+            <a
+              href="https://www.linkedin.com/in/carlos-daniel-274a55219/"
+              target="_blank"
+            >
+              Linkedin
+            </a>
+          </li>
+          <img
+            src="./images/bxl-linkedin-square.svg"
+            alt="Linkedin"
+            class="link-img"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Aside -->
+      <aside>
+        <div>
+          <a href="https://github.com/Hartye" target="_blank">
+            <img src="./images/bxl-github.svg" alt="Github" title="Github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/carlos-daniel-274a55219/"
+            target="_blank"
+          >
+            <img
+              src="./images/bxl-linkedin-square.svg"
+              alt="Linkedin"
+              title="Linkedin"
+            />
+          </a>
+        </div>
+      </aside>
+
+      <!-- Welcome page -->
+      <div class="animation">
+        <div></div>
+        <div></div>
+      </div>
+      <section class="container">
+        <div class="text reveal">
+          <h2>Hello World!</h2>
+          <p>
+            My name is Hartye. I am 16 years old and this is my Portfolio!...
+          </p>
+          <br />
+          <p>Welcome to my Page!</p>
+        </div>
+
+        <!-- Vertical Line -->
+        <div class="vl"></div>
+        <section class="content">
+          <!-- Cards -->
+          <div class="cards reveal">
+            <div class="card">
+              <img src="./images/devFinances.png" />
+            </div>
+            <div class="card">
+              <img src="./images/jobsCalc.png" />
+            </div>
+          </div>
+
+          <!-- Double Vertical Line -->
+          <div class="d-vl">
+            <div></div>
+            <div></div>
+          </div>
+
+          <!-- Presentation -->
+          <div class="myself text reveal">
+            <h3>Myself</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              dignissimos expedita nisi corporis praesentium illum ratione porro
+              ad assumenda odit explicabo maxime aspernatur, veniam consequatur
+              aut eveniet doloribus id minus!
+            </p>
+          </div>
+
+          <!-- Vertical Line -->
+          <div class="vl"></div>
+
+          <!-- Cards -->
+          <div class="cards reveal">
+            <div class="card">
+              <img src="./images/portfolio.png" class="wide-img" />
+            </div>
+          </div>
+
+          <!-- Double Vertical Line -->
+          <div class="d-vl">
+            <div></div>
+            <div></div>
+          </div>
+
+          <!-- Gallery images -->
+          <div class="gallery">
+            <div class="images-container">
+              <img src="./images/devFinances.png" />
+              <img src="./images/devFinances.png" />
+              <img src="./images/devFinances.png" />
+            </div>
+            <div class="gallery-controller">
+              <button onclick="gallery('left')">
+                <img src="./images/bx-left-arrow-alt.svg" alt="left" />
+              </button>
+              <button onclick="gallery('right')">
+                <img src="./images/bx-right-arrow-alt.svg" alt="right" />
+              </button>
+            </div>
+          </div>
+
+          <!-- Two from the side -->
+          <div class="skills">
+            <div class="left-side reveal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              doloremque magni harum provident facere perferendis deleniti
+              possimus autem blanditiis natus eum, neque ea iste magnam.
+              Cupiditate ipsum quae nam tempore.
+            </div>
+            <div class="vl"></div>
+            <div class="right-side reveal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+              aperiam, recusandae ad voluptas, nisi ex iste suscipit error
+              dolorum rerum beatae ea neque nesciunt alias inventore odit
+              adipisci delectus similique.
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div id="copy">
+        <p>hartye&copy; 2020</p>
+      </div>
+      <div class="to-top">
+        <button onclick="toTop()">TOP</button>
+      </div>
+    </footer>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+/* Global */
+:root {
+  --purple-shine: #9A16F2;
+  --purple-bright: #8704BF;
+  --purple-lighter: #481D73;
+  --purple-light: #381659;
+  --purple: #281040;
+  --purple-dark: #150926;
+  --purple-darker: #07030D;
+  --white: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--purple-darker);
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wide-img {
+  width: 60vw;
+  height: 30vw;
+}
+
+/* Header */
+header {
+  right: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+header nav {
+  margin: 1rem 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header nav .nav-item {
+  margin: .5rem .5rem 0 .5rem;
+  list-style-type: none;
+  font-size: 1.3rem;
+  padding: .1rem .3rem;
+  color: var(--purple-shine);
+  background: var(--purple-darker);
+  border: 3px solid var(--purple-bright);
+  opacity: .9;
+}
+
+header nav .nav-item:hover {
+  cursor: pointer;
+}
+
+header nav .nav-item a {
+  color: var(--purple-shine);
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header images */
+.link-img {
+  opacity: 1;
+  height: max(4vw, 50px);
+  width: max(4vw, 50px);
+  margin-top: 1rem;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.nav-item:hover ~ .link-img {
+  opacity: 1;
+}
+
+/* Aside */
+aside {
+  right: 0;
+  top: 0;
+  margin: calc(50vh - 50px) 3rem 0 0;
+  position: fixed;
+  z-index: 1;
+}
+
+aside div {
+  display: flex;
+  flex-direction: column;
+}
+
+aside div img {
+  height: max(4vw, 50px);
+  width: max(4vw, 50px);
+  transition: all .1s ease-in-out;
+}
+
+aside div img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Main */
+main {
+  margin-top: 5rem;
+}
+
+/* Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  margin: auto;
+  width: 80vw;
+  color: var(--white);
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skills div.reveal {
+  margin: 2rem;
+  width: 30vw;
+}
+
+/* Gallery images */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.gallery .images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: all .5s ease-in-out;
+}
+
+.gallery .images-container img {
+  width: 25vw;
+  margin: 0 .5rem;
+}
+
+.gallery .images-container img:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.gallery .images-container img:last-child {
+  border-radius: 0 1rem 0 0;
+}
+
+.gallery .gallery-controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  height: 7rem;
+  background: var(--purple-darker);
+  border-radius: 0 0 1rem 1rem;
+  border: 2px solid var(--purple-bright);
+  border-top: none;
+} 
+
+.gallery .gallery-controller button {
+  margin: 1rem;
+  background: transparent;
+  border: none;
+}
+
+.gallery .gallery-controller button img {
+  width: 3rem;
+}
+
+.gallery .gallery-controller button img:hover {
+  cursor: pointer;
+}
+
+/* Vertical line */
+.vl {
+  border-left: 10px solid var(--purple-lighter);
+  height: 500px;
+  margin: 5rem 1rem;
+}
+
+/* Double Vertical line */
+.d-vl {
+  display: flex;
+}
+
+.d-vl div {
+  border-left: 10px solid var(--purple-lighter);
+  height: 500px;
+  margin: 5rem 1rem;
+}
+
+/* Content */
+.content {
+  width: 95vw;
+  background: var(--purple-dark);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+/* Presentation */
+.myself {
+  text-align: center;
+  width: 50vw;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 5rem;
+  background: var(--purple-darker);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#copy {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.to-top {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.to-top button {
+  background: var(--purple-bright);
+  color: var(--white);
+  border: none;
+  border-radius: .5rem;
+  margin-right: 5rem;
+  padding: .5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+}

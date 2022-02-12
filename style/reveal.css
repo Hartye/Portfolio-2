@@ -1,0 +1,76 @@
+/* Greetings */
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 80vw;
+}
+
+.text.reveal {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.text.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cards .card img {
+  width: 500px;
+  height: 281px;
+}
+
+.wide-img {
+  width: 600px !important;
+  height: 337px !important;
+}
+
+.cards.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.cards.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Cards from side */
+.left-side.reveal {
+  position: relative;
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.right-side.reveal {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.left-side.reveal.active,
+.right-side.reveal.active {
+  transform: translateX(0);
+  opacity: 1;
+}
